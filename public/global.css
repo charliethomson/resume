@@ -1,0 +1,26 @@
+:root {
+  --text: #fae2db;
+  --link: #1ce8c6;
+  --header-bg: #4d2941;
+  --body-bg: #38303b;
+  --app-bg: #222;
+  --dark-accent: #280000;
+  --light-accent: #a5c9d9;
+}
+
+::selection {
+  background-color: #5e856b;
+}
+
+* {
+  color: var(--text);
+}
+
+div {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
