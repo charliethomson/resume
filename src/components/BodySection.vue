@@ -11,16 +11,10 @@
 
 <style scoped>
 .heading {
-  font-size: 20px;
-  height: 25px;
-  width: 3in;
+  font-size: 18pt;
   margin: auto;
+  align-items: center;
   text-align: center;
-}
-
-.body {
-  width: 6in;
-  margin: auto;
 }
 </style>
 

@@ -31,7 +31,7 @@
   background-color: var(--header-bg);
 }
 .header {
-  border-bottom: 2px solid var(--dark-accent);
+  border-bottom: 2px solid var(--text);
   padding: 0.25in;
   height: 1in;
 }
@@ -63,12 +63,17 @@
 .rest > * {
   display: flex;
   flex-direction: column;
-  text-align: right;
   padding: 0.1in;
+}
+.contact {
+  text-align: right;
+}
+.links {
+  text-align: left;
 }
 
 .contact {
-  border-right: 2px solid var(--dark-accent);
+  border-right: 2px solid var(--text);
 }
 </style>
 

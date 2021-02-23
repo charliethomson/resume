@@ -25,7 +25,10 @@ export type Expertise = NameItems;
 export type Skill = NameItems;
 
 export interface Job {
-  company: string;
+  company: {
+    name: string;
+    link: string;
+  };
   location: string;
   position: string;
   dates: string;
@@ -69,7 +72,7 @@ export const resumeData: Resume = {
       },
       {
         name: "Frontend",
-        items: ["VueJS", "Svelte", "Blazor"],
+        items: ["VueJS", "Svelte", "Blazor", "Bootstrap"],
       },
       {
         name: "Backend",
@@ -94,34 +97,27 @@ export const resumeData: Resume = {
       heading: "Expertise",
       data: [
         {
-          name: "Developer",
+          name: "Systems",
           items: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "Sed malesuada sollicitudin condimentum",
-            "Proin a nulla sit amet neque pellentesque fermentum et sed nulla",
-            "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
-            "Aenean porttitor eu tellus at ultricies",
-            "Ut id rhoncus arcu",
-            "Nam pretium maximus nunc vel rhoncus",
-            "Suspendisse ut neque erat",
-            "Duis et nunc ut eros euismod tristique",
-            "Aliquam posuere leo non tempor tincidunt",
-            "Sed elementum luctus volutpat",
-            "Sed iaculis faucibus nisi, et dictum felis viverra in",
-            "Morbi facilisis tincidunt massa quis varius",
-            "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
-            "Aliquam bibendum nulla at dolor condimentum, vitae vestibulum nisl consequat",
-            "Aliquam non orci tempus quam placerat rutrum",
-            "Morbi magna erat, varius ut arcu placerat, mollis pharetra lectus",
+            "Create applications to aid the efficiency of employee operations",
+            "Design tools to automate monotonous tasks",
+            "Develop comprehensive unit tests to ensure proper functionality",
+            "Utilize Object-oriented and Data-oriented design paradigms for greater performance and code legibility",
           ],
         },
         {
-          name: "Developer",
-          items: ["bullet 1", "bullet 2"],
+          name: "Backend",
+          items: [
+            "Design strongly typed RESTful CRUD APIs",
+            "Implement efficient algorithms for data transfer and transform",
+            "Provide a secure interface for SQL based databases",
+          ],
         },
         {
-          name: "Developer",
-          items: ["bullet 1", "bullet 2"],
+          name: "Frontend",
+          items: [
+            "Build responsive, asynchronous web applications interfacing with public and private APIs",
+          ],
         },
       ],
     },
@@ -156,13 +152,19 @@ export const resumeData: Resume = {
       heading: "Work History",
       data: [
         {
-          company: "uBreakiFix",
+          company: {
+            name: "uBreakiFix",
+            link: "https://www.ubreakifix.com",
+          },
           location: "Fredericksburg, VA",
           position: "Repair Technician",
           dates: "Jan 2020 - Present",
         },
         {
-          company: "Orange County Public Schools",
+          company: {
+            name: "Orange County Public Schools",
+            link: "https://www.ocss-va.org",
+          },
           location: "Orange, VA",
           position: "Information Technology Intern",
           dates: "Sept 2018 - Sept 2019",

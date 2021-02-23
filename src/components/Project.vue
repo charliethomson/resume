@@ -15,11 +15,25 @@
 </template>
 
 <style scoped>
+.project {
+  padding-bottom: 0.2in;
+}
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.1in;
+}
 .tools {
   display: flex;
-  flex-wrap: 1;
-  flex-direction: column;
-  width: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50%;
+  justify-self: end;
+}
+
+.description {
+  text-indent: 10px;
 }
 </style>
 

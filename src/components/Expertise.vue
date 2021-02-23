@@ -19,6 +19,7 @@
   font-size: 14pt;
 }
 .item {
+  margin-bottom: 0.05in;
   font-size: 12pt;
   margin-left: 0.1in;
 }

@@ -1,20 +1,26 @@
 <template>
   <div class="bodyContainer">
-    <body-section :heading="expertise.heading">
-      <div class="expertiseContainer">
-        <expertise
-          v-for="item in expertise.data"
-          :key="item.name"
-          :item="item"
-        />
-      </div>
-    </body-section>
+    <div class="horizontal">
+      <body-section :heading="expertise.heading">
+        <div class="expertiseContainer">
+          <expertise
+            v-for="item in expertise.data"
+            :key="item.name"
+            :item="item"
+          />
+        </div>
+      </body-section>
 
-    <body-section :heading="projects.heading">
-      <div class="projectsContainer">
-        <project v-for="item in projects.data" :key="item.name" :item="item" />
-      </div>
-    </body-section>
+      <body-section :heading="projects.heading">
+        <div class="projectsContainer">
+          <project
+            v-for="item in projects.data"
+            :key="item.name"
+            :item="item"
+          />
+        </div>
+      </body-section>
+    </div>
 
     <body-section :heading="work.heading">
       <div class="jobsContainer">
@@ -24,7 +30,19 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.horizontal {
+  width: 8.5in;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.horizontal > * {
+  width: 4in;
+}
+.projectsContainer {
+}
+</style>
 
 <script lang="ts">
 import { defineComponent } from "vue";

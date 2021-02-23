@@ -1,11 +1,43 @@
 :root {
   --text: #fae2db;
+  --link: #fae2db;
+  --link-accent: #eeddff;
+  --link-hover: #eeddff;
+  --header-bg: #2b2f31;
+  --body-bg: #181a1b;
+  --app-bg: #484e51;
+}
+
+#app.colorful {
+  --text: #fae2db;
   --link: #1ce8c6;
+  --link-accent: #eeddff;
+  --link-hover: #00ccaa;
   --header-bg: #4d2941;
   --body-bg: #38303b;
   --app-bg: #222;
   --dark-accent: #280000;
   --light-accent: #a5c9d9;
+}
+#app.dark {
+  --text: #fae2db;
+  --link: #fae2db;
+  --link-accent: #eeddff;
+  --link-hover: #eeddff;
+  --header-bg: #2b2f31;
+  --body-bg: #181a1b;
+  --app-bg: #484e51;
+}
+#app.light {
+  --text: #280000;
+  --link: black;
+  --link-accent: #eeddff;
+  --link-hover: black;
+  --header-bg: white;
+  --body-bg: white;
+  --app-bg: #aaa;
+  --dark-accent: #a5c9d9;
+  --light-accent: #280000;
 }
 
 ::selection {
@@ -23,4 +55,9 @@ div {
 a {
   text-decoration: none;
   color: var(--link);
+  transition: 0.5s ease;
+}
+
+a:hover {
+  --link: var(--link-hover);
 }
