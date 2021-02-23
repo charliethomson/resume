@@ -1,7 +1,12 @@
 <template>
   <div class="project">
     <div class="projectHeader">
-      <border-slide color="var(--link)" :center="false" start_width="10px">
+      <border-slide
+        color="var(--link-accent)"
+        position="left"
+        height="2px"
+        start_width="10px"
+      >
         <a :href="item.url" class="title">{{ item.name }}</a>
       </border-slide>
       <div class="tools">
@@ -23,13 +28,20 @@
   justify-content: space-between;
   padding-bottom: 0.1in;
 }
+.title {
+  font-weight: 600;
+  font-size: 14pt;
+}
 .tools {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   max-width: 50%;
   justify-self: end;
+}
+.tool {
+  padding-left: 1ch;
 }
 
 .description {

@@ -1,12 +1,15 @@
-:root {
-  --text: #280000;
-  --link: black;
-  --link-hover: black;
-  --header-bg: #ddd;
-  --body-bg: white;
-  --app-bg: #aaa;
-  --dark-accent: #a5c9d9;
-  --light-accent: #280000;
+@media print {
+  #app.light {
+    --text: #280000;
+    --link: #280000;
+    --link-accent: #280000;
+    --link-hover: #280000;
+    --header-bg: white;
+    --body-bg: white;
+    --app-bg: #aaa;
+    --dark-accent: #a5c9d9;
+    --light-accent: #280000;
+  }
 }
 
 @page {

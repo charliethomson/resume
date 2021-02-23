@@ -4,9 +4,10 @@
       <a :href="item.company.link">
         <border-slide
           color="var(--link-accent)"
-          :center="false"
+          position="left"
           start_width="10px"
-          class="company"
+          height="2px"
+          class="company merriweather"
         >
           {{ item.company.name }}
         </border-slide>
@@ -32,8 +33,6 @@
   padding-bottom: 10px;
   width: 8in;
   margin: auto;
-
-  --location-underline: var(--dark-accent);
 }
 .col {
   display: flex;
@@ -48,13 +47,12 @@
 .location {
   transition: 0.5s linear;
   display: inline-block;
-  border-bottom: 2px dotted var(--location-underline);
-}
-.job:hover {
-  --location-underline: var(--light-accent);
+  border-bottom: 2px dotted var(--light-accent);
 }
 .company {
   color: var(--link);
+  font-weight: 600;
+  font-size: 14;
 }
 .dates {
   padding-left: 10px;

@@ -1,6 +1,6 @@
 <template>
   <div class="expertise">
-    <border-slide class="label">
+    <border-slide class="label" height="2px">
       {{ item.name }}
     </border-slide>
     <div class="items">
@@ -17,6 +17,7 @@
 }
 .label {
   font-size: 14pt;
+  font-weight: 600;
 }
 .item {
   margin-bottom: 0.05in;

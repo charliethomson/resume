@@ -3,7 +3,6 @@
     <resume-header />
     <div class="separator" />
     <resume-body />
-    <resume-footer />
   </div>
 </template>
 
@@ -24,14 +23,12 @@
 import { defineComponent } from "vue";
 import ResumeHeader from "./ResumeHeader.vue";
 import ResumeBody from "./ResumeBody.vue";
-import ResumeFooter from "./ResumeFooter.vue";
 
 export default defineComponent({
   name: "Page",
   components: {
     ResumeHeader,
     ResumeBody,
-    ResumeFooter,
   },
 });
 </script>

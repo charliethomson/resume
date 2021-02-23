@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="maybeCenter" :style="cssVars">
+  <div class="container" :class="position" :style="cssVars">
     <slot>BorderSlide</slot>
   </div>
 </template>
@@ -9,8 +9,14 @@
   display: inline-block;
 }
 
+.container.left:after {
+  margin-right: auto;
+}
 .container.center:after {
   margin: auto;
+}
+.container.right:after {
+  margin-left: auto;
 }
 
 .container:after {
@@ -35,7 +41,7 @@ export default defineComponent({
     start_width: { type: String, default: "0%" },
     end_width: { type: String, default: "100%" },
     height: { type: String, default: "1px" },
-    center: { type: Boolean, default: true },
+    position: { type: String, default: "left" },
   },
   computed: {
     cssVars(): {} {
@@ -45,9 +51,6 @@ export default defineComponent({
         "--end-width": this.end_width,
         "--border-height": this.height,
       };
-    },
-    maybeCenter(): string {
-      return this.center ? "center" : "";
     },
   },
 });

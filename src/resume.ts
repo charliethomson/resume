@@ -99,10 +99,10 @@ export const resumeData: Resume = {
         {
           name: "Systems",
           items: [
+            "Utilize Object-oriented and Data-oriented design paradigms for greater performance and code legibility",
             "Create applications to aid the efficiency of employee operations",
             "Design tools to automate monotonous tasks",
             "Develop comprehensive unit tests to ensure proper functionality",
-            "Utilize Object-oriented and Data-oriented design paradigms for greater performance and code legibility",
           ],
         },
         {

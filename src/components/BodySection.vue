@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="heading">
+    <div class="heading merriweather">
       {{ heading }}
     </div>
     <div class="body">
@@ -12,6 +12,7 @@
 <style scoped>
 .heading {
   font-size: 18pt;
+  font-weight: 600;
   margin: auto;
   align-items: center;
   text-align: center;

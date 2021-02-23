@@ -2,6 +2,7 @@
   <border-slide
     start_width="20px"
     color="var(--light-accent)"
+    position="center"
     height="2px"
     class="skillHeader"
   >
@@ -17,6 +18,7 @@
 <style scoped>
 .skillHeader {
   color: var(--light-accent);
+  font-weight: 600;
 }
 </style>
 
