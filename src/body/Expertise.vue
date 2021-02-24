@@ -30,7 +30,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Expertise } from "@/resume";
-import BorderSlide from "./BorderSlide.vue";
+import BorderSlide from "../components/BorderSlide.vue";
 
 export default defineComponent({
   name: "Expertise",

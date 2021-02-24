@@ -17,12 +17,14 @@ export interface Project {
   url: string;
 }
 
-export interface NameItems {
+export interface Expertise {
   name: string;
   items: string[];
 }
-export type Expertise = NameItems;
-export type Skill = NameItems;
+export interface Skill {
+  name: string;
+  items: Array<Link | string>;
+}
 
 export interface Job {
   company: {

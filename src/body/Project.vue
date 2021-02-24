@@ -1,14 +1,16 @@
 <template>
   <div class="project">
     <div class="projectHeader">
-      <border-slide
+      <slide-link
+        class="title"
+        :href="item.url"
         color="var(--link-accent)"
         position="left"
         height="2px"
         start_width="10px"
       >
-        <a :href="item.url" class="title">{{ item.name }}</a>
-      </border-slide>
+        {{ item.name }}
+      </slide-link>
       <div class="tools">
         <div class="tool" v-for="tool in item.tools" :key="tool">
           {{ tool }}
@@ -52,11 +54,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Project } from "../resume";
-import BorderSlide from "./BorderSlide.vue";
+import SlideLink from "../components/SlideLink.vue";
 
 export default defineComponent({
   name: "Project",
-  components: { BorderSlide },
+  components: { SlideLink },
   props: {
     item: Object as () => Project,
   },

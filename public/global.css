@@ -1,4 +1,4 @@
-#app.colorful {
+body.colorful {
   --text: #fae2db;
   --link: #1ce8c6;
   --link-accent: #eeddff;
@@ -9,7 +9,7 @@
   --dark-accent: #280000;
   --light-accent: #a5c9d9;
 }
-#app.dark {
+body.dark {
   --text: #fae2db;
   --link: #fae2db;
   --link-accent: #eeddff;
@@ -20,45 +20,69 @@
   --dark-accent: #280000;
   --light-accent: #a5c9d9;
 }
-#app.light {
+body.light {
   --text: #280000;
   --link: #280000;
   --link-accent: #280000;
   --link-hover: #280000;
-  --header-bg: white;
+  --header-bg: #eee;
   --body-bg: white;
   --app-bg: #aaa;
   --dark-accent: #a5c9d9;
   --light-accent: #280000;
 }
-
 ::selection {
   background-color: #5e856b;
 }
-
 * {
   color: var(--text);
 }
-
 div {
   font-family: "Open Sans", sans-serif;
 }
-
 .merriweather {
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
 }
-a,
-.link {
+.link,
+a {
   text-decoration: none;
   color: var(--link);
   transition: 0.5s ease;
 }
-
-a:hover,
-.link:hover {
+.link:hover,
+a:hover {
   --link: var(--link-hover);
 }
-
-#app {
+body {
   transition: all 0.5s ease;
+}
+@media print {
+  #app {
+    --text: #280000;
+    --link: #280000;
+    --link-accent: #280000;
+    --link-hover: #280000;
+    --header-bg: #eee;
+    --body-bg: white;
+    --app-bg: #aaa;
+    --dark-accent: #a5c9d9;
+    --light-accent: #280000;
+  }
+}
+
+/* @media print {
+  :root {
+    --text: #280000;
+    --link: #280000;
+    --link-accent: #280000;
+    --link-hover: #280000;
+    --header-bg: #eee;
+    --body-bg: white;
+    --app-bg: #aaa;
+    --dark-accent: #a5c9d9;
+    --light-accent: #280000;
+  }
+} */
+@page {
+  margin: 0;
 }

@@ -1,43 +1,34 @@
 <template>
   <div class="bodyContainer">
-    <div class="horizontal">
+    <div class="topSection">
       <body-section :heading="expertise.heading">
-        <div class="expertiseContainer">
-          <expertise
-            v-for="item in expertise.data"
-            :key="item.name"
-            :item="item"
-          />
-        </div>
+        <expertise
+          v-for="item in expertise.data"
+          :key="item.name"
+          :item="item"
+        />
       </body-section>
 
       <body-section :heading="projects.heading">
-        <div class="projectsContainer">
-          <project
-            v-for="item in projects.data"
-            :key="item.name"
-            :item="item"
-          />
-        </div>
+        <project v-for="item in projects.data" :key="item.name" :item="item" />
       </body-section>
     </div>
 
     <body-section :heading="work.heading">
-      <div class="jobsContainer">
-        <job v-for="item in work.data" :key="item.name" :item="item" />
-      </div>
+      <job v-for="item in work.data" :key="item.name" :item="item" />
     </body-section>
   </div>
 </template>
 
 <style scoped>
-.horizontal {
+.topSection {
   width: 8.5in;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
-.horizontal > * {
+.topSection > * {
   width: 4in;
 }
 </style>

@@ -213,7 +213,6 @@ export default defineComponent({
   },
   methods: {
     print: function(_: any) {
-      // this.selectTheme("light");
       window.print();
     },
     openThemeSelector: function(_: any) {

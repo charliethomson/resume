@@ -4,6 +4,7 @@
     color="var(--light-accent)"
     position="center"
     height="2px"
+    :hide="false"
     class="skillHeader"
   >
     {{ name }}
@@ -24,7 +25,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import BorderSlide from "./BorderSlide.vue";
+import BorderSlide from "../components/BorderSlide.vue";
 
 export default defineComponent({
   name: "ResumeHeader",

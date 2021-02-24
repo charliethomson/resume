@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="position" :style="cssVars">
+  <div class="container" :class="cssClass" :style="cssVars">
     <slot />
   </div>
 </template>
@@ -7,6 +7,7 @@
 <style scoped>
 .container {
   display: inline-block;
+  color: inherit;
 }
 
 .container.left:after {
@@ -29,6 +30,12 @@
 .container:hover:after {
   width: var(--end-width);
 }
+
+@media print {
+  .container.hide:after {
+    display: none;
+  }
+}
 </style>
 
 <script lang="ts">
@@ -42,6 +49,7 @@ export default defineComponent({
     end_width: { type: String, default: "100%" },
     height: { type: String, default: "1px" },
     position: { type: String, default: "left" },
+    hide: { type: Boolean, default: true },
   },
   computed: {
     cssVars(): {} {
@@ -51,6 +59,9 @@ export default defineComponent({
         "--end-width": this.end_width,
         "--border-height": this.height,
       };
+    },
+    cssClass(): string {
+      return this.position + (this.hide ? " hide" : "");
     },
   },
 });
