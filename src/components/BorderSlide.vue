@@ -1,6 +1,6 @@
 <template>
   <div class="container" :class="position" :style="cssVars">
-    <slot>BorderSlide</slot>
+    <slot />
   </div>
 </template>
 

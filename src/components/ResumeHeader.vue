@@ -55,6 +55,7 @@
   position: relative;
   text-align: center;
   background-color: var(--header-bg);
+  box-shadow: 5px 5px 5px 0 black;
 }
 .header {
   border-bottom: 2px solid var(--text);

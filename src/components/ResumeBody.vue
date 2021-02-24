@@ -40,8 +40,6 @@
 .horizontal > * {
   width: 4in;
 }
-.projectsContainer {
-}
 </style>
 
 <script lang="ts">

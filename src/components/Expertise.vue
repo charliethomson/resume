@@ -14,6 +14,7 @@
 <style scoped>
 .expertise {
   margin: 0.05in;
+  margin-top: 0;
 }
 .label {
   font-size: 14pt;
@@ -27,8 +28,8 @@
 </style>
 
 <script lang="ts">
-import { Expertise } from "@/resume";
 import { defineComponent } from "vue";
+import { Expertise } from "@/resume";
 import BorderSlide from "./BorderSlide.vue";
 
 export default defineComponent({

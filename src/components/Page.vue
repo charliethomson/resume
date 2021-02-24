@@ -1,21 +1,17 @@
 <template>
   <div class="pageContainer">
     <resume-header />
-    <div class="separator" />
     <resume-body />
   </div>
 </template>
 
 <style scoped>
-.separator {
-  height: 0.25in;
-  background-image: linear-gradient(var(--header-bg) 0%, var(--body-bg) 100%);
-}
 .pageContainer {
   width: 8.5in;
   height: 11in;
   margin: auto;
   background-color: var(--body-bg);
+  box-shadow: 5px 5px 5px 0 black;
 }
 </style>
 

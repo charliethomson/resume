@@ -17,6 +17,9 @@
   align-items: center;
   text-align: center;
 }
+.section {
+  margin-top: 0.25in;
+}
 </style>
 
 <script lang="ts">

@@ -68,7 +68,7 @@ export const resumeData: Resume = {
     skills: [
       {
         name: "Systems",
-        items: ["Rust", "C#", "C", "C++", "Python"],
+        items: ["Rust", "C#", "C", "C++"],
       },
       {
         name: "Frontend",
