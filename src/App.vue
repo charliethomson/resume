@@ -26,12 +26,25 @@ export default defineComponent({
 #app,
 body {
   background-color: var(--app-bg);
-  height: 11in;
+  max-height: 11in;
 }
 .pageContainer {
-  width: 8.5in;
-  height: 11in;
+  max-width: 8.5in;
+  max-height: 11in;
   margin: auto;
   background-color: var(--body-bg);
+}
+@media screen and (max-width: 10.5in) {
+  #app,
+  body {
+    background-color: var(--app-bg);
+    max-height: unset;
+  }
+  .pageContainer {
+    max-width: unset;
+    max-height: unset;
+    margin: auto;
+    background-color: var(--body-bg);
+  }
 }
 </style>

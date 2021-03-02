@@ -19,6 +19,12 @@
   padding: 5px;
   text-align: left;
 }
+@media screen and (max-width: 10.5in) {
+  .info {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>
 
 <script lang="ts">

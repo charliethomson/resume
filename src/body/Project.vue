@@ -22,6 +22,11 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 10.5in) {
+  .project {
+    padding: 0.2in;
+  }
+}
 .project {
   padding-bottom: 0.2in;
 }

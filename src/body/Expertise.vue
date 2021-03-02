@@ -12,6 +12,12 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 10.5in) {
+  .expertise {
+    padding: 0.2in;
+    max-width: 100%;
+  }
+}
 .expertise {
   margin: 0.05in;
   margin-top: 0;

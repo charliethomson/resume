@@ -26,6 +26,12 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 10.5in) {
+  .job {
+    padding: 0.2in;
+    max-width: 100%;
+  }
+}
 .job {
   display: flex;
   flex-direction: row;

@@ -36,6 +36,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 10.5in) {
+  .container.hide:after {
+    display: none;
+  }
+}
 </style>
 
 <script lang="ts">

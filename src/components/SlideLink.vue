@@ -1,9 +1,11 @@
 <template>
-  <a :href="href">
-    <border-slide v-bind="borderSlideVars">
-      <slot />
-    </border-slide>
-  </a>
+  <div>
+    <a :href="href">
+      <border-slide v-bind="borderSlideVars">
+        <slot />
+      </border-slide>
+    </a>
+  </div>
 </template>
 
 <script lang="ts">

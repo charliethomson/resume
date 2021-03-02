@@ -1,24 +1,29 @@
 <template>
   <div class="contact">
-    <slide-link v-bind="slideProps" :href="`mailto:${email}`">{{
-      email
-    }}</slide-link>
-    <slide-link v-bind="slideProps" :href="`tel:${phone}`">{{
-      phone
-    }}</slide-link>
+    <slide-link class="email" v-bind="slideProps" :href="`mailto:${email}`">
+      {{ email }}
+    </slide-link>
+    <slide-link v-bind="slideProps" :href="`tel:${phone}`">
+      {{ phone }}
+    </slide-link>
   </div>
 </template>
 
 <style scoped>
 .contact {
+  border-right: 2px solid var(--text);
   display: flex;
   flex-direction: column;
   padding: 5px;
   text-align: right;
 }
-.email {
-}
-.phone {
+@media screen and (max-width: 10.5in) {
+  .contact {
+    border-right: none;
+    border-bottom: 2px solid var(--text);
+    width: 100%;
+    text-align: center;
+  }
 }
 </style>
 

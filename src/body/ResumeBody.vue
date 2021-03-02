@@ -22,14 +22,14 @@
 
 <style scoped>
 .topSection {
-  width: 8.5in;
+  max-width: 8.5in;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .topSection > * {
-  width: 4in;
+  max-width: 4in;
 }
 </style>
 

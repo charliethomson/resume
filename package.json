@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "vite": "node ./bin/vite"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -19,6 +20,7 @@
     "node-sass": "^5.0.0",
     "prettier": "^1.19.1",
     "sass-loader": "^10.1.1",
-    "typescript": "~3.9.3"
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-vite": "^0.2.0"
   }
 }

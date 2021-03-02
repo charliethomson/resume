@@ -26,7 +26,7 @@
   padding: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .skills {
   margin: auto;
@@ -47,28 +47,29 @@
   font-weight: 600;
   font-size: 20pt;
 }
-.rest {
-  position: absolute;
-  right: 0.2in;
-  top: 0.2in;
-  display: flex;
-  flex-direction: row;
-}
-.rest > * {
-  display: flex;
-  flex-direction: column;
-  padding: 0.1in;
-}
-.contact {
-  text-align: right;
-}
 .links {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 10.5in) {
+  .skills {
+    flex-wrap: wrap;
+  }
 
-.contact {
-  border-right: 2px solid var(--text);
+  .skillContainer {
+    padding-bottom: 10px;
+    max-width: 1in;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .name {
+    font-size: 24pt;
+  }
 }
 </style>
 
