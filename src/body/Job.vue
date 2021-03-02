@@ -1,17 +1,16 @@
 <template>
   <div class="job">
     <div class="col" style="text-align:left">
-      <a :href="item.company.link">
-        <border-slide
-          color="var(--link-accent)"
-          position="left"
-          start_width="10px"
-          height="2px"
-          class="company merriweather"
-        >
-          {{ item.company.name }}
-        </border-slide>
-      </a>
+      <slide-link
+        :href="item.company.link"
+        color="var(--link-accent)"
+        position="left"
+        start_width="10px"
+        height="2px"
+        class="company merriweather"
+      >
+        {{ item.company.name }}
+      </slide-link>
       <div class="dates">{{ item.dates }}</div>
     </div>
     <div class="col col-right" style="text-align:right">
@@ -68,11 +67,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Job } from "../resume";
-import BorderSlide from "../components/BorderSlide.vue";
+import SlideLink from "../components/SlideLink.vue";
 
 export default defineComponent({
   name: "Job",
-  components: { BorderSlide },
+  components: { SlideLink },
   props: {
     item: Object as () => Job,
   },

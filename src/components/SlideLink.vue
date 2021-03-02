@@ -1,9 +1,11 @@
 <template>
   <div>
     <a :href="href">
-      <border-slide v-bind="borderSlideVars">
-        <slot />
-      </border-slide>
+      <link-icon>
+        <border-slide v-bind="borderSlideVars">
+          <slot />
+        </border-slide>
+      </link-icon>
     </a>
   </div>
 </template>
@@ -11,11 +13,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BorderSlide from "./BorderSlide.vue";
+import LinkIcon from "./LinkIcon.vue";
 
 export default defineComponent({
   name: "SlideLink",
   components: {
     BorderSlide,
+    LinkIcon,
   },
   props: {
     color: { type: String, default: "var(--text)" },
